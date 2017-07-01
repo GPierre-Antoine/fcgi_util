@@ -12,7 +12,7 @@ path_dire="$(dirname $path_full)"
 
 
 pushd /usr/local/bin
-find . -name "fcgi*" -type f -exec rm {} ';' 
+find . -name "fcgi*" -type l -exec rm {} ';' 
 popd
 
 rm -rf "$path_dire"
